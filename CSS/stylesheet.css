@@ -1,0 +1,27 @@
+
+
+label {
+    display: block;
+}
+
+form {
+    margin: 0 auto;
+    max-width: 500px;
+    min-width: 200px;
+    width: 40vw;
+
+}
+
+input {
+    width: 100%;
+}
+
+textarea {
+    width: 100%;
+}
+
+.submit {
+    display: block;
+    margin: 0 auto;
+    width: 40%;
+}
