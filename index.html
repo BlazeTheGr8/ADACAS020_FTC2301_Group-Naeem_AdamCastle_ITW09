@@ -5,84 +5,96 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/stylesheet.css">
+    <script src="https://kit.fontawesome.com/77f5e5363b.js" crossorigin="anonymous"></script>
     <title>Digital Resume for Adam Castle</title>
 </head>
 <body>
     <header>
         
-        <h1>Adam Castle</h1>
-        <p>I'm an aspiring Software Developer.</p>
-        <picture>
+        <h1 class="name">Adam Castle</h1>
+        <p class="title">I'm an aspiring Software Developer.</p>
+        <picture class="image">
             <source srcset="Images/mobile.jpg" media="(max-width: 425px)"  height="100px">
             <source srcset="Images/tablet.jpg" media="(max-width: 900px)" height="250px">
             <source srcset="Images/desktop.jpg" media="(max-width: 2000px)" height="250px">
             <img src="Images/desktop.jpg" alt="Headshot" width="" height="200vh">
         </picture>
+        <p class="description">I am an aspiring software developer with a special interest in cyber security and AI. I have experience troubleshooting cloud services at AWS and am currently enrolled in a Software Development course to broaden my skillset.</p>
     </header>
 
     <nav>
-        <ul>
-            <li><a href="">Education</a></li>
-            <li><a href="">Experience</a></li>
-            <li><a href="">Skills</a></li>
-            <li><a href="">Contact</a></li>
+        <ul class="links">
+            <li class="l1"><a href="#education">Education</a></li>
+            <li class="l2"><a href="#experience">Experience</a></li>
+            <li class="l3"><a href="#skills">Skills</a></li>
+            <li class="l4"><a href="#contact">Contact</a></li>
         </ul>
+
+        <div class="gitlink">
+        <a href="https://github.com/BlazeTheGr8" title="Adam's Github" target="_blank"><i class="fa-brands fa-github github"></i>
+        <p class="gitdesc">Github</p></a>
+        </div>
     </nav>
     
-    <section>
-        <h2>Education</h2>
+    <div class="container">
+        <section>
+            <h2 id="education">Education</h2>
 
-        <h3>University of the Western Cape</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique et ab itaque quibusdam blanditiis quia nemo ipsum quis eius. Maxime, vel deserunt delectus perferendis explicabo iusto alias laboriosam labore natus!</p>
+            <h3>University of the Western Cape</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique et ab itaque quibusdam blanditiis quia nemo ipsum quis eius. Maxime, vel deserunt delectus perferendis explicabo iusto alias laboriosam labore natus!</p>
 
-        <h3>Software Development @ CodeSpace Academy</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat aperiam, delectus reprehenderit mollitia enim perferendis consequuntur quae, illo dolores amet porro fugit, eveniet provident magnam impedit harum eos nulla nihil?</p>
-    </section>
+            <h3>Software Development @ CodeSpace Academy</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat aperiam, delectus reprehenderit mollitia enim perferendis consequuntur quae, illo dolores amet porro fugit, eveniet provident magnam impedit harum eos nulla nihil?</p>
+        </section>
 
-    <section>
-        <h2>Experience</h2>
+        <section>
+            <h2 id="experience">Experience</h2>
 
-        <h3>Lorem, ipsum dolor.</h3>
-        <ul>
-            <li>Lorem ipsum dolor, sit amet consectetur adipisicing.</li>
-            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, obcaecati.</li>
-            <li>Lorem ipsum dolor sit amet.</li>
-            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur ipsa atque hic?</li>
-        </ul>
+            <h3>Lorem, ipsum dolor.</h3>
+            <ul>
+              <li>Lorem ipsum dolor, sit amet consectetur adipisicing.</li>
+              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, obcaecati.</li>
+              <li>Lorem ipsum dolor sit amet.</li>
+              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur ipsa atque hic?</li>
+            </ul>
 
-        <h3>Lorem ipsum dolor sit amet.</h3>
-        <ul>
-            <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
-            <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
-            <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
-            <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
-            <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
-        </ul>
-    </section>
+            <h3>Lorem ipsum dolor sit amet.</h3>
+            <ul>
+              <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
+              <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
+              <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
+              <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
+              <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
+            </ul>
+        </section>
 
-    <section>
-        <h2>Skills</h2>
-        <ul>
+        <section>
+          <h2 id="skills">Skills</h2>
+          <ul>
             <li>Lorem ipsum dolor sit amet consectetur.</li>
-            <li>Lorem ipsum dolor sit amet consectetur.</li>
-            <li>Lorem ipsum dolor sit amet consectetur.</li>
-            <li>Lorem ipsum dolor sit amet consectetur.</li>
-            <li>Lorem ipsum dolor sit amet consectetur.</li>
-        </ul>
-    </section>
+              <li>Lorem ipsum dolor sit amet consectetur.</li>
+              <li>Lorem ipsum dolor sit amet consectetur.</li>
+              <li>Lorem ipsum dolor sit amet consectetur.</li>
+              <li>Lorem ipsum dolor sit amet consectetur.</li>
+          </ul>
+        </section>
+    </div>
     <footer>
-        <h2>Contact Me</h2>
-        <form>
-            <label for="name">Name: <input type="text" name="name" placeholder="Your Name..." id="name"></label>
-            <label for="email">Email Address: <input type="email" name="email" placeholder="eg. email@domain.com"></label>
-            <label for="number">Contact Number: <input type="number" name="number" placeholder="1234567890"></label>
-            <label for="message">Message:<textarea></textarea></label>
+        <h2 id="contact">Contact Me</h2>
+        <form action="https://formsubmit.co/adamcastle98@gmail.com" method="POST">
+        <fieldset>
+            <legend>Send me a message!</legend>
+            <label for="name">Name: <input type="text" name="name" placeholder="Your Name..." id="name" required></label>
+            <label for="email">Email Address: <input type="email" name="email" placeholder="eg. email@domain.com" required></label>
+            <label for="number">Contact Number: <input type="number" name="number" placeholder="1234567890" required></label>
+            <label for="message">Message:<textarea placeholder="Your Message..." required></textarea ></label>
             <input type="submit" name="submit" value="Submit" class="submit">
+            </fieldset>
         </form>
-        <div>
-            <a>LinkedIn</a>
-            <a>Instagram</a>
-            <a>WhatsApp</a>
+        <div class="contactdetails">
+            <a href="https://www.linkedin.com/in/adam-castle-3b57b5243/" title="Adam's LinkedIn" target="_blank"><i class="fa-brands fa-linkedin contacts"> LinkedIn</i></a>
+            <a href="https://github.com/BlazeTheGr8" title="Adam's Github" target="_blank"><i class="fa-brands fa-github contacts"> Github</i>
+            <a href="mailto:adamcastle09@icloud.com"><i class="fa-solid fa-envelope contacts" > adamcastle09@icloud.com</i></a>
         </div>
     </footer>
 </body>

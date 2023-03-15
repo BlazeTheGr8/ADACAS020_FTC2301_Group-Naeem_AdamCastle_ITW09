@@ -1,15 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+body {
+    background-image: url("https://www.transparenttextures.com/patterns/paper-1.png")
+}
 
 label {
     display: block;
 }
 
 form {
-    margin: 0 auto;
+    margin: 5% auto;
     max-width: 500px;
     min-width: 200px;
-    width: 40vw;
-
+    width: 60vw;
 }
 
 input {
@@ -25,3 +32,147 @@ textarea {
     margin: 0 auto;
     width: 40%;
 }
+
+header {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 100%;
+    align-self: center;
+    background-color: #05386b;
+    color: antiquewhite;
+}
+
+img {
+    border-radius: 50%;
+    border: 5px solid grey;
+}
+
+.image {
+    order: 0;
+    align-self: center;
+    margin-top: 10%;
+    
+}
+
+.name {
+    order: 1;
+    align-self: center;
+    margin: 5% 0;
+}
+
+.title {
+    order: 2;
+    align-self: center;
+    padding-left: 10%;
+    margin-bottom: 5%;
+}
+
+.description {
+    order: 3;
+    align-self: center;
+    margin: 5% 10%;
+    margin-bottom: 5%;
+
+}
+
+
+nav {
+    display: flex;
+    width: 100%;
+    background-color: #0d60b3;
+    position: sticky;
+    top: 0%;
+
+}
+
+.links {
+    flex: 5;
+    padding-top: 1%;
+    padding-left: 5%;
+    padding-bottom: 1%;
+}
+
+.github {
+    flex: 1;
+    font-size: 4rem;
+    margin-top: 5%;
+}
+
+.gitlink {
+    margin-right: 5%;
+
+}
+
+.gitdesc {
+    padding-left: 14%;
+}
+
+.container {
+    margin: 5% 0;
+    padding: 0 10%;
+}
+
+h2 {
+    margin: 0% auto;
+    margin-top: 5%;
+    width: fit-content;
+    border-bottom: 2px solid black;
+    padding-top: 5em;
+}
+
+h3 {
+    margin: 5% 0;
+}
+
+#skills {
+    margin-bottom: 5%;
+}
+
+fieldset {
+    padding: 4%;
+}
+
+.l1, .l2, .l3, .l4 {
+    list-style-type: none;
+    margin: 1% 0;
+}
+
+a:link {
+    color: #dff2c2;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #dff2c2;
+}
+
+footer {
+    margin-bottom: -1%;
+    padding-top: 2%;
+    color: antiquewhite;
+    background-color: #05386b;
+}
+
+.contactdetails {
+    margin: 0 auto;
+    padding-bottom: 4%;
+    width: 100vw;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.contacts {
+    align-self: center;
+    font-size: 0.5rem;
+    width: fit-content;
+}
+
+a {
+    width: fit-content;
+}
+
+a:hover {
+    background-color: #0d60b3;
+}
+
