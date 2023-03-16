@@ -278,7 +278,7 @@ h3 a:visited {
         grid-template-areas: 
         "header header header"
         "nav container container"
-        "footer footer footer";
+        "nav footer footer";
         font-size: 30px;
     }
 
@@ -318,7 +318,8 @@ h3 a:visited {
         position: sticky;
         top: 0%;
         left: 0;
-        height: 100vh;
+        height: 110vh;
+        margin-bottom: -5%;
     }
 
     #contact {
@@ -373,11 +374,16 @@ h3 a:visited {
 
     footer {
         z-index: 1;
+        width: 100%;
     }
     
     a:hover, li:hover {
         background-color: #d2c9c952;
         transform: scale(1.2);
+    }
+
+    .contactdetails {
+        width: 100%;
     }
 
 }
