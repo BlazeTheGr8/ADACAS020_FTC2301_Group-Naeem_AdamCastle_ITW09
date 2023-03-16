@@ -9,20 +9,23 @@
     <title>Digital Resume for Adam Castle</title>
 </head>
 <body>
-    <header>
-        
-        <h1 class="name">Adam Castle</h1>
-        <p class="title">I'm an aspiring Software Developer.</p>
+    <header class="header">
+
         <picture class="image">
             <source srcset="Images/mobile.jpg" media="(max-width: 425px)"  height="100px">
             <source srcset="Images/tablet.jpg" media="(max-width: 900px)" height="250px">
             <source srcset="Images/desktop.jpg" media="(max-width: 2000px)" height="250px">
+        
             <img src="Images/desktop.jpg" alt="Headshot" width="" height="200vh">
         </picture>
+       <div class="namepic"> 
+        <h1 class="name">Adam Castle</h1>
+        <p class="title">Software Developer</p>
+      </div>
         <p class="description">I am an aspiring software developer with a special interest in cyber security and AI. I have experience troubleshooting cloud services at AWS and am currently enrolled in a Software Development course to broaden my skillset.</p>
     </header>
 
-    <nav>
+    <nav class="nav">
         <ul class="links">
             <li class="l1"><a href="#education">Education</a></li>
             <li class="l2"><a href="#experience">Experience</a></li>
@@ -37,49 +40,53 @@
     </nav>
     
     <div class="container">
-        <section>
+        <section class="content">
             <h2 id="education">Education</h2>
 
+            <div class="education">
             <h3>University of the Western Cape</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique et ab itaque quibusdam blanditiis quia nemo ipsum quis eius. Maxime, vel deserunt delectus perferendis explicabo iusto alias laboriosam labore natus!</p>
+            <p>Completed Course: FAMILY LAW, INTRO TO LEGAL STUDIES, LEGAL SYSTEMS, LAW OF PERSONS, INTRO TO PSYCHOLOGY, BRAIN AND BEHAVIOUR, PSYCH OF CHILD DEVELOPMENT, INTRO TO RESEARCH METHODS</p>
 
-            <h3>Software Development @ CodeSpace Academy</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat aperiam, delectus reprehenderit mollitia enim perferendis consequuntur quae, illo dolores amet porro fugit, eveniet provident magnam impedit harum eos nulla nihil?</p>
+            <h3>Software Development @ <a href="https://www.codespace.co.za/" title="CodeSpace homepage" target="_blank">CodeSpace Academy</a></h3>
+            <p>HTML, CSS JAVASCRIPT ETC.</p>
+            </div>
         </section>
 
         <section>
             <h2 id="experience">Experience</h2>
-
-            <h3>Lorem, ipsum dolor.</h3>
+            <div class="experience">
+            <h3>Mr Delivery USA - 2017-2018</h3>
             <ul>
-              <li>Lorem ipsum dolor, sit amet consectetur adipisicing.</li>
-              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, obcaecati.</li>
-              <li>Lorem ipsum dolor sit amet.</li>
-              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur ipsa atque hic?</li>
+              <li>Liasing with Market Owners and restaurants owners to maintain service levels.</li>
+              <li>Dispatching orders and Driver management to ensure an 'On-Time' delivery rate of above 80%</li>
+              <li>Screenhawking which involved watching all orders in a minumum of 3 market places (Cities in America)</li>
+              <li>Delegating and dividing workloads to ensure efficient completion</li>
             </ul>
 
-            <h3>Lorem ipsum dolor sit amet.</h3>
+            <h3>Amazon Development Centre (SA) (PTY) LTD - 2018-2022</h3>
             <ul>
-              <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
-              <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
-              <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
-              <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
-              <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
+              <li>Provided technical support for Amazon devices and software.</li>
+              <li>Analyzed AWS account service usage to optimize billing and adjust invoicing when necessary.</li>
+              <li>Collaborated with AWS clients to setup and maintain Account Access Management involving Identity and Access Management (IAM), Securing Compromised accounts and systems within a 1 horu SLA</li>
+              <li>Basic cloud troubleshooting while educating clients on how to fix their own issues where possible.</li>
+              <li>Mentored a team of 5 for Quality Assurance</li>
             </ul>
+            </div>
         </section>
 
-        <section>
+        <section class="skills">
           <h2 id="skills">Skills</h2>
           <ul>
-            <li>Lorem ipsum dolor sit amet consectetur.</li>
-              <li>Lorem ipsum dolor sit amet consectetur.</li>
-              <li>Lorem ipsum dolor sit amet consectetur.</li>
-              <li>Lorem ipsum dolor sit amet consectetur.</li>
-              <li>Lorem ipsum dolor sit amet consectetur.</li>
+              <li>HTML, CSS, Github, VSCode.</li>
+              <li>Proficient with Windows, MacOS and Linux operating systems.</li>
+              <li>MS Office Suite.</li>
+              <li>Basic Networking and Software troubleshooting.</li>
+              <li>Social Media and Networking</li>
+              <li>AWS: Account Access Management(IAM), Account Security, Billing, and Basic cloud service troublshooting.</li>
           </ul>
         </section>
     </div>
-    <footer>
+    <footer class="footer">
         <h2 id="contact">Contact Me</h2>
         <form action="https://formsubmit.co/adamcastle98@gmail.com" method="POST">
         <fieldset>
