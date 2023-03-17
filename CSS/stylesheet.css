@@ -307,10 +307,10 @@ h3 a:visited {
     }
 
     form {
-    margin: 5% auto;
-    max-width: 800px;
-    min-width: 200px;
-    width: 80%;
+      margin: 5% auto;
+      max-width: 800px;
+      min-width: 200px;
+      width: 80%;
     }
 
     .nav {
