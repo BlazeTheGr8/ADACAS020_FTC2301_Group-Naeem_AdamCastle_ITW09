@@ -377,7 +377,7 @@ h3 a:visited {
         width: 100%;
     }
     
-    a:hover, li:hover {
+    a:hover {
         background-color: #d2c9c952;
         transform: scale(1.2);
     }
